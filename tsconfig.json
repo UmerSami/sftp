@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "target": "ES2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "typeRoots": ["./node_modules/@types", "./src/types"],  // ✅ Add custom types
+    "types": ["node", "ssh2"]  // ✅ Ensure TypeScript loads 'ssh2'
+  },
+  "include": ["src", "src/types"]  // ✅ Ensure TS scans the types directory
+}
